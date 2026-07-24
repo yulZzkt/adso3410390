@@ -1,5 +1,5 @@
 # adso3410390
-![my picture](src/img/profile.png)
+![my picture](src/img/profile.jpeg)
 ## Karla Yulieth Luna Medina
 ### Analisis y desarrollo de software
 ** centro de procesos industriales y construccion **
