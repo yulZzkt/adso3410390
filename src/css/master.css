@@ -29,7 +29,7 @@ body {
         }
     }
     &.mainmenu.layout{
-        background:  linear-gradient(45deg,rgb(238, 167, 200),rgb(243, 115, 158));
+        background:  linear-gradient(45deg,rgb(205, 238, 167),rgb(255, 148, 184));
         main{
             header{
                 h1{
@@ -45,7 +45,7 @@ body {
             menu{
                 a:is(:link, :visited){
                     span{
-                        background-color: orchid;
+                        background-color: rgba(125, 200, 102, 0.835);
                     }
                     aside{
                         h3{
@@ -53,14 +53,14 @@ body {
                         }
                     }
                     &:is(:hover){
-                        background-color: orchid;
+                        background-color: rgb(139, 218, 112);
                     }
                 }
             }
         }
     }
     main {
-        background: linear-gradient(to bottom, rgba(130, 102, 255, 0.459), #9da3db);
+        background: linear-gradient(to bottom, rgba(255, 102, 102, 0.459), #db9d9d91);
         border-radius: 0.4rem;
         padding: 1rem;
         min-width: 380px;
