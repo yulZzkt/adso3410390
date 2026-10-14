@@ -1,0 +1,36 @@
+/*variables*/
+:root{
+ --color-dreamworld:#F6F1E7;
+ scroll-behavior: smooth;
+}
+ 
+body{
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    main{
+
+        header{
+            min-width: 100dvh;
+            h1{
+               border-bottom: 2px solid white ;
+               padding-bottom: 3.5px;
+               margin-right: auto;
+            }
+            img.logo{
+                width: 200px;
+            }
+            img.menu{
+                margin-top: auto;
+                width: 150px;
+            }
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            height: 90px;
+            justify-content: space-between;
+        }
+    }
+}
