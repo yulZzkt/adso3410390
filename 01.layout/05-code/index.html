@@ -1,29 +1,185 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>game</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>
     <main>
-        <header #navbar>
-            <img class=logo src="img/logo.png" alt="logo">
-            <h1>welcome to the black space...</h1>
-            <a href=""></a>
+        <header id="navbar">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <h1 class="black-space-title">welcome to the black space...</h1>
+            <a href="#"></a>
             <img class="menu" src="img/menu.png" alt="menu">
-            <!--<nav>
-                <a href="#about" class="active">About</a>
-                <a href="#principalcharacters"> Principal Characters</a>
-                <a href="#ImportantPlaces">Important Places</a>
-                <a href="#gamemechanics">Game Mechanics</a>
-            </nav> -->
         </header>
-        <section #></section>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>OMORI is a psychological horror RPG about friendship, memories, and the worlds we create to escape
+                reality.
+                Explore a strange and colorful dream world filled with familiar faces, mysterious places, and unexpected
+                adventures. As the story unfolds, the line between dreams and reality begins to blur, revealing a deeper
+                story hidden beneath the cheerful world.</p>
+        </section>
+
+        <section id="characters">
+            <div class="header-personajes">
+                <h2>principal characters</h2>
+                <button id="nextbtn" class="btn">
+                    <img src="img/flecha.png" alt="flecha navegacion">
+                </button>
+            </div>
+
+            <div class="pista-personajes" id="pistaPersonajes">
+                <div class="cardcharacter">
+                    <img src="img/sunny.png" alt="sunny">
+                    <h3> sunny </h3>
+                    <p>Sunny is the real person behind Omori. After isolating himself from the outside world, he
+                        retreats
+                        into his dreams and creates Headspace as an escape from painful memories.
+                        Omori represents the version of himself that Sunny created to remain inside this dream world and
+                        avoid confronting reality.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/omori.png" alt="omori">
+                    <h3>omori</h3>
+                    <p>OMORI is the dream-world version of Sunny, created within Headspace as a way to escape painful
+                        memories. Unlike Sunny, Omori is quiet, emotionless, and seemingly unaffected by the past.
+
+                        He spends his time with his friends in Headspace, but his connection to Sunny becomes
+                        increasingly
+                        important as the truth behind the dream world is revealed.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/basil.png" alt="basil">
+                    <h3> basil</h3>
+                    <p>Real-world Basil is Sunny's childhood friend and one of the people closest to him. He is gentle,
+                        caring, and passionate about photography and gardening.
+                        Basil and Sunny share important memories from their childhood, but those memories also connect
+                        them
+                        to the painful events that Sunny has tried to hide.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/basil-dreamworld.png" alt="basil dreamworld">
+                    <h3>basil Dreamworld</h3>
+                    <p>Dreamworld Basil is the version of Basil that exists within Headspace. He is based on Sunny's
+                        memories of the real Basil and represents the close friendship they once shared.
+                        Although he appears cheerful and caring, his presence is connected to memories that Sunny is
+                        trying
+                        to forget. His relationship with Omori reflects the bond between their real-world counterparts.
+                    </p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/aubrey.png" alt="aubrey">
+                    <h3>aubrey</h3>
+                    <p>Aubrey has changed drastically over the four years following Mari's death, morphing into a
+                        rebellious, pink-haired teenager who leads a local gang known as The Hooligans. Feeling
+                        abandoned and betrayed by her former friends during her darkest moments, she guards her profound
+                        grief and home instability behind a wall of anger, hostility, and a terrifying nail-bat.
+                        However, behind her tough facade lies a heartbroken girl longing for the connection she once
+                        lost.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/aubrey-dreamworld.png" alt="aubrey dreamworld">
+                    <h3>aubrey dreamworld</h3>
+                    <p>Aubrey is an energetic, fierce, and tough-minded girl who wields a giant toy hammer in Headspace.
+                        She is fiercely protective of her friends—especially Omori, whom she holds a special fondness
+                        for—and frequently gets into petty, playful arguments with Kel. Despite her aggressive exterior
+                        and impulsive nature, Aubrey has a deeply sensitive heart and cares passionately about keeping
+                        the group together during their adventures.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/kel.png" alt="kel">
+                    <h3>kel</h3>
+                    <p>Kel has grown into a tall, friendly, and outgoing high school basketball player. Unlike others
+                        who isolated themselves after the tragedy, Kel processed his grief by staying active and
+                        reaching out to the community. He serves as the primary catalyst for the game's real-world
+                        events, persistently knocking on Sunny's door to draw him out of his four-year isolation and
+                        attempting to reunite their fractured friend group before Sunny moves away.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/kel-dreamworld.png" alt="kel dreamworld">
+                    <h3>kel dreamworld</h3>
+                    <p>Kel is an effortlessly cheerful, hyperactive, and competitive boy who always strives to keep the
+                        group's spirits high. Armed with his trusty basketball, he relies on speed, enthusiasm, and
+                        unpredictable moves to overcome obstacles. Kel spends most of his time teasing Aubrey and
+                        causing chaotic situations, but beneath his playful and carefree demeanor, he is deeply loyal
+                        and dedicated to helping his friends.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/hero.png" alt="hero">
+                    <h3>hero</h3>
+                    <p>Hero is now a pre-med college student who appears mature, composed, and successful, striving to
+                        meet his parents' high expectations. Beneath his flawless reputation, however, Hero spent years
+                        trapped in severe depression and guilt following Mari's tragic death. Though he has managed to
+                        rebuild his life and maintain his kind, caring nature, returning home reawakens the unresolved
+                        grief and bittersweet memories of the past.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/hero-dreamworld.png" alt="hero dreamworld">
+                    <h3>Hero</h3>
+                    <p>Hero is the eldest, most responsible, and universally loved member of the dream world group.
+                        Serving as a natural peacekeeper, he is the glue that holds everyone together, constantly
+                        stepping in to resolve heated arguments between Aubrey and Kel. He is a talented cook and baker
+                        whose meals restore the party's health, and his warm, reassuring presence makes him a dependable
+                        leader whenever the group faces danger.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/mari.png" alt="mari">
+                    <h3>Mari</h3>
+                    <p>Mari was Sunny’s loving, perfectionistic older sister and an exceptionally talented pianist. Her
+                        warm personality made her the beloved center of the entire friend group. Her sudden, tragic
+                        death four years ago completely shattered her family and friends, creating a deep pool of
+                        trauma, guilt, and unanswered questions that haunt Sunny and ultimately drive the central
+                        narrative of the game.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/mari-dreamworld.png" alt="mari dreamworld">
+                    <h3>mari dreamworld</h3>
+                    <p>Mari is Sunny’s kind, nurturing older sister who appears at various cozy picnic spots throughout
+                        Headspace. She acts as a gentle guide and a safe haven for the group, offering saving points,
+                        words of encouragement, and delicious snacks. Always watching over them with a warm smile, Mari
+                        represents a comforting reminder of happier times and encourages everyone to rest whenever the
+                        journey becomes overwhelming.</p>
+                </div>
+                <div class="cardcharacter">
+                    <img src="img/thing.png" alt="thing">
+                    <h3>thing?</h3>
+                    <p>???</p>
+                </div>
+            </div>
+        </section>
+        <section id="lugares-importantes">
+            <div class="cabecera-lugares">
+                <h2>Important Places</h2>
+                <button id="flechaLugares" class="btn">
+                    <img src="img/flecha.png" alt="flecha navegacion">
+                </button>
+            </div>
+
+            <div class="pista-lugares" id="pistaLugares">
+                <div class="card-lugar">
+                    <img src="img/lugar.png" alt="lugar">
+                    <div class="info-lugar">
+                        <p>Headspace is a colorful dream world created from Sunny's imagination. It is filled with
+                            strange creatures, familiar faces, mysterious locations, and endless adventures.
+
+                            Although everything seems bright and playful, Headspace hides memories and emotions beneath
+                            its cheerful surface. Omori and his friends travel through this world while searching for
+                            adventures, solving problems, and discovering its many secrets.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+
+        </section>
     </main>
     <script src="js/app.js"></script>
 </body>

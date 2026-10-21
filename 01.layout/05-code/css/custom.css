@@ -1,36 +1,194 @@
-/*variables*/
-:root{
- --color-dreamworld:#F6F1E7;
- scroll-behavior: smooth;
+:root {
+    --color-dreamworld: #f6f1e7e0;
+    --color-text: #424242;
+    scroll-behavior: smooth;
 }
- 
-body{
+
+body {
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    main{
 
-        header{
-            min-width: 100dvh;
-            h1{
-               border-bottom: 2px solid white ;
-               padding-bottom: 3.5px;
-               margin-right: auto;
+    main {
+        .btn {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+
+            img {
+                width: 80px;
+                height: auto;
+                transition: transform 0.2s ease;
             }
-            img.logo{
-                width: 200px;
+
+            &:hover img {
+                transform: scale(1.1);
             }
-            img.menu{
-                margin-top: auto;
-                width: 150px;
-            }
+        }
+
+        #navbar {
+            width: 100%;
+            height: 90px;
             background-color: black;
             color: white;
             display: flex;
             align-items: center;
-            height: 90px;
             justify-content: space-between;
+            padding: 0 20px;
+
+            .black-space-title {
+                padding-bottom: 3.5px;
+                margin-right: auto;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 160%;
+                    height: 2px;
+                    background-color: white;
+                }
+            }
+
+            img.logo {
+                width: 200px;
+            }
+
+            img.menu {
+                margin-top: auto;
+                width: 150px;
+            }
+        }
+
+        #about {
+            color: white;
+            max-width: 800px;
+            margin:  auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #characters {
+            background-color: var(--color-dreamworld);
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 1000px;
+            margin: 20px auto;
+
+            .header-personajes {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+
+                h2 {
+                    margin: 0;
+                    font-size: 28px;
+                    color: var(--color-text);
+                    text-transform: capitalize;
+                }
+
+
+            }
+
+            .pista-personajes {
+                display: flex;
+                gap: 25px;
+                overflow-x: auto;
+                scroll-behavior: smooth;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                .cardcharacter {
+                    min-width: 220px;
+                    max-width: 220px;
+                    flex-shrink: 0;
+                    text-align: center;
+
+                    img {
+                        width: 120px;
+                        height: 120px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    h3 {
+                        margin: 10px 0 5px;
+                        text-transform: capitalize;
+                        color: var(--color-text);
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.4;
+                        color: var(--color-text);
+                        text-align: left;
+                    }
+                }
+            }
+        }
+
+        #lugares-importantes {
+            background-color: var(--color-dreamworld);
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 1000px;
+            margin: 20px auto;
+
+            .cabecera-lugares {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 20px;
+
+                h2 {
+                    margin: 0;
+                    font-size: 28px;
+                    color: var(--color-text);
+                }
+
+
+            }
+
+            .pista-lugares {
+                display: flex;
+                gap: 25px;
+                /*scroll-behavior: smooth;
+                overflow-x: auto;
+                scrollbar-width: none;
+
+                &::-webkit-scrollbar {
+                    display: none;
+                }*/
+
+                .card-lugar {
+                    min-width: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+
+
+                    img {
+                        height: 300px;
+                        border-radius: 20px;
+                    }
+
+                    .info-lugar {
+                        width: 50%;
+                        color: var(--color-text);
+                        font-size: 18px;
+                        line-height: 1.5;
+                    }
+                }
+            }
         }
     }
 }
