@@ -14,10 +14,24 @@
         <header id="navbar">
             <img class="logo" src="img/logo.png" alt="logo">
             <h1 class="black-space-title">welcome to the black space...</h1>
-            <button>
-                <img class="menu" src="img/menu.png" alt="menu">
+            <button id="menuBtn" type="button" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="menuPrincipal">
+                <img class="menu" src="img/menu.png" alt="">
             </button>
-            
+
+            <div class="menu-fondo" aria-hidden="true"></div>
+
+            <nav id="menuPrincipal" class="menu-principal" aria-label="Menú principal" aria-hidden="true">
+                <ul>
+                    <li><a href="#navbar">Inicio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#characters">Characters</a></li>
+                    <li><a href="#lugares-importantes">Important Places</a></li>
+                    <li><a href="#game-mechanics">Game Mechanics</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+
         </header>
 
         <section id="about">
